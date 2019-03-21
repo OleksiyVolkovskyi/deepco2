@@ -7,7 +7,7 @@ from keras.regularizers import l2
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv("AirQualityUCI.csv")
+data = pd.read_csv("AirQualityUCI.csv",sep=";")
 
 
 anxiety_labels = data.get("AnxietyDisorder").values
